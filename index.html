@@ -3,152 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <title>SAP-LEADS 2022-2023</title>
-<meta name="description" content="SAP-LEADS 2022-2023" />
-<meta name="keywords" content="Keywords related to your webpage" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta http-equiv="cleartype" content="on">
-<meta name="apple-mobile-web-app-title" content="DATA BASE">
-<link rel="shortcut icon" type="image/png" href="https://lh3.googleusercontent.com/d/1hi8uyhwZmhnXmY4wPxcTa1vc3xb0avSV" />
-<link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1hi8uyhwZmhnXmY4wPxcTa1vc3xb0avSV" />
-<link rel="apple-touch-icon" sizes="72x72" href="https://lh3.googleusercontent.com/d/1hi8uyhwZmhnXmY4wPxcTa1vc3xb0avSV" />
-<link rel="apple-touch-icon" sizes="114x114" href="https://lh3.googleusercontent.com/d/1hi8uyhwZmhnXmY4wPxcTa1vc3xb0avSV" />
-
-<!-- Open Graph Meta Tags -->
-<meta property="og:title" content="SAP-LEADS 2022-2023" />
-<meta property="og:description" content="SAP-LEADS 2022-2023" />
-<meta property="og:image" content="https://lh3.googleusercontent.com/d/1hi8uyhwZmhnXmY4wPxcTa1vc3xb0avSV" />
-<meta property="og:url" content="https://infinityrichglobal.github.io/SAP-Leads/" />
-<meta property="og:type" content="website" />
-
-<!-- Twitter Card Meta Tags -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="SAP-LEADS 2022-2023" />
-<meta name="twitter:description" content="SAP-LEADS 2022-2023" />
-<meta name="twitter:image" content="https://lh3.googleusercontent.com/d/1hi8uyhwZmhnXmY4wPxcTa1vc3xb0avSV" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    /* สไตล์สำหรับหน้าล็อกอิน */
-    body {
-      background: linear-gradient(45deg, #ff6ec4, #7986cb);
-      font-family: 'Courier New', Courier, monospace;
-      color: #fff;
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      height: 100%;
+      background-color: #f5f5f5;
+    }
+
+    .container {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
+      height: 100%;
     }
 
     .login-container {
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: white;
       padding: 40px;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
     }
 
     h1 {
-      font-size: 36px;
-      margin-bottom: 30px;
-      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
     }
 
     input[type="text"], input[type="password"] {
       width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      box-sizing: border-box;
-      border: none;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
       border-radius: 4px;
-      background-color: rgba(255, 255, 255, 0.8);
-      color: #333;
-      font-family: inherit;
-      font-size: 16px;
+      box-sizing: border-box;
+      font-size: 14px;
     }
 
     button {
-      background-color: #4CAF50;
+      width: 100%;
+      padding: 10px;
+      background-color: #333;
       color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
       border: none;
       border-radius: 4px;
       cursor: pointer;
-      width: 100%;
-      font-family: inherit;
       font-size: 16px;
+      transition: background-color 0.3s;
     }
 
     button:hover {
-      background-color: #45a049;
+      background-color: #555;
     }
 
-    /* สไตล์สำหรับ iframe */
     #content {
       display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
-   #homeBtn {
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    #homeBtn {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
       background-color: #333;
-      color: #fff;
+      color: white;
       border: none;
       font-size: 24px;
       display: flex;
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-      transition: background-color 0.3s ease, transform 0.3s ease;
+      transition: background-color 0.3s;
     }
+
     #homeBtn:hover {
       background-color: #555;
-      transform: scale(1.1);
     }
   </style>
 </head>
 <body>
-  <div class="login-container">
-    <h1>SAP-LEADS 2022-2023M</h1>
-    <input type="text" placeholder="Username" id="username" />
-    <input type="password" placeholder="Password" id="password" />
-    <button onclick="login()">Login</button>
+  <div class="container">
+    <div class="login-container">
+      <h1>SAP-LEADS 2022-2023</h1>
+      <input type="text" placeholder="Username" id="username" />
+      <input type="password" placeholder="Password" id="password" />
+      <button onclick="login()">Login</button>
+    </div>
   </div>
 
   <div id="content">
-    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" src="https://script.google.com/macros/s/AKfycbxnd5xg_IrY5N2-ZFssOjvhK8_mvH33iKEVBCYSSpPm76YlBiBoqoEOVVV4cadFlQem/exec"></iframe>
+    <iframe src="https://script.google.com/macros/s/AKfycbxnd5xg_IrY5N2-ZFssOjvhK8_mvH33iKEVBCYSSpPm76YlBiBoqoEOVVV4cadFlQem/exec"></iframe>
     <button id="homeBtn"><i class="fas fa-home"></i></button>
   </div>
 
   <script>
     function login() {
-      // ตรวจสอบข้อมูลผู้ใช้งาน (สามารถปรับเปลี่ยนได้ตามความต้องการ)
       var username = document.getElementById("username").value;
       var password = document.getElementById("password").value;
       if (username === "SuperiCez" && password === "Zaq1zaq!") {
-        // แสดงผล iframe เมื่อล็อกอินสำเร็จ
-        document.querySelector(".login-container").style.display = "none";
+        document.querySelector(".container").style.display = "none";
         document.getElementById("content").style.display = "block";
       } else {
         alert("Invalid username or password");
       }
     }
 
-    const homeBtn = document.getElementById('homeBtn');
-    const iframe = document.querySelector('iframe');
-    homeBtn.addEventListener('click', () => {
-      iframe.src = 'https://script.google.com/macros/s/AKfycbxnd5xg_IrY5N2-ZFssOjvhK8_mvH33iKEVBCYSSpPm76YlBiBoqoEOVVV4cadFlQem/exec';
+    document.getElementById('homeBtn').addEventListener('click', () => {
+      document.querySelector('iframe').src = 'https://script.google.com/macros/s/AKfycbxnd5xg_IrY5N2-ZFssOjvhK8_mvH33iKEVBCYSSpPm76YlBiBoqoEOVVV4cadFlQem/exec';
     });
   </script>
 </body>
 </html>
-
