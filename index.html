@@ -1,44 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
   <meta charset="UTF-8">
   <title>SAP LEADS 2022-2023</title>
-<meta name="description" content="SAP LEADS 2022-2023" />
-<meta name="keywords" content="SAP LEADS 2022-2023" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta http-equiv="cleartype" content="on">
-<meta name="apple-mobile-web-app-title" content="SAP-LEADS 2022-2023">
-<link rel="shortcut icon" type="image/png" href="https://lh3.googleusercontent.com/d/1hi8uyhwZmhnXmY4wPxcTa1vc3xb0avSV" />
-<link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1hi8uyhwZmhnXmY4wPxcTa1vc3xb0avSV" />
-<link rel="apple-touch-icon" sizes="72x72" href="https://lh3.googleusercontent.com/d/1hi8uyhwZmhnXmY4wPxcTa1vc3xb0avSV" />
-<link rel="apple-touch-icon" sizes="114x114" href="https://lh3.googleusercontent.com/d/1hi8uyhwZmhnXmY4wPxcTa1vc3xb0avSV" />
-
-<!-- Open Graph Meta Tags -->
-<meta property="og:title" content="SAP-LEADS 2022-2023" />
-<meta property="og:description" content="SAP-LEADS 2022-2023" />
-<meta property="og:image" content="https://lh3.googleusercontent.com/d/1hi8uyhwZmhnXmY4wPxcTa1vc3xb0avSV" />
-<meta property="og:url" content="https://nilmat2007.github.io/nun/" />
-<meta property="og:type" content="website" />
-
-<!-- Twitter Card Meta Tags -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="SAP-LEADS 2022-2023" />
-<meta name="twitter:description" content="SAP-LEADS 2022-2023" />
-<meta name="twitter:image" content="https://lh3.googleusercontent.com/d/1hi8uyhwZmhnXmY4wPxcTa1vc3xb0avSV" />
+  <meta name="description" content="SAP LEADS 2022-2023" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" type="image/png" href="https://lh3.googleusercontent.com/d/1hi8uyhwZmhnXmY4wPxcTa1vc3xb0avSV" />
+  <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1hi8uyhwZmhnXmY4wPxcTa1vc3xb0avSV" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
   
   <style>
-    /* สไตล์สำหรับหน้าล็อกอิน */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      background: linear-gradient(45deg, #ff6ec4, #7986cb);
-      font-family: 'Courier New', Courier, monospace;
-      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -46,61 +30,73 @@
       margin: 0;
     }
 
-    .login-container {
-      background-color: rgba(0, 0, 0, 0.5);
+    .app-container {
+      background-color: #fff;
+      width: 100%;
+      max-width: 400px;
       padding: 40px;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     }
 
     h1 {
-      font-size: 36px;
+      font-size: 24px;
       margin-bottom: 30px;
-      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+      text-align: center;
+      color: #333;
     }
 
     input[type="text"], input[type="password"] {
       width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      box-sizing: border-box;
+      padding: 15px;
+      margin: 10px 0;
       border: none;
-      border-radius: 4px;
-      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      background-color: #f0f0f0;
       color: #333;
-      font-family: inherit;
       font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="text"]:focus, input[type="password"]:focus {
+      background-color: #e6e6e6;
+      outline: none;
     }
 
     button {
-      background-color: #4CAF50;
+      background-color: #333;
       color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
+      padding: 15px;
+      margin: 20px 0 10px;
       border: none;
-      border-radius: 4px;
+      border-radius: 10px;
       cursor: pointer;
       width: 100%;
-      font-family: inherit;
       font-size: 16px;
+      transition: background-color 0.3s ease;
     }
 
     button:hover {
-      background-color: #45a049;
+      background-color: #555;
     }
 
-    /* สไตล์สำหรับ iframe */
     #content {
       display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1000;
     }
-   #homeBtn {
+
+    #homeBtn {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
       background-color: #333;
       color: #fff;
       border: none;
@@ -109,17 +105,28 @@
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
       transition: background-color 0.3s ease, transform 0.3s ease;
+      z-index: 1001;
     }
+
     #homeBtn:hover {
       background-color: #555;
-      transform: scale(1.1);
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 480px) {
+      .app-container {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        padding: 40px 20px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="login-container">
+  <div class="app-container">
     <h1>SAP LEADS 2022-2023</h1>
     <input type="text" placeholder="Username" id="username" />
     <input type="password" placeholder="Password" id="password" />
@@ -133,12 +140,10 @@
 
   <script>
     function login() {
-      // ตรวจสอบข้อมูลผู้ใช้งาน (สามารถปรับเปลี่ยนได้ตามความต้องการ)
       var username = document.getElementById("username").value;
       var password = document.getElementById("password").value;
       if (username === "SuperiCez" && password === "Zaq1zaq!") {
-        // แสดงผล iframe เมื่อล็อกอินสำเร็จ
-        document.querySelector(".login-container").style.display = "none";
+        document.querySelector(".app-container").style.display = "none";
         document.getElementById("content").style.display = "block";
       } else {
         alert("Invalid username or password");
@@ -149,6 +154,11 @@
     const iframe = document.querySelector('iframe');
     homeBtn.addEventListener('click', () => {
       iframe.src = 'https://script.google.com/macros/s/AKfycbxnd5xg_IrY5N2-ZFssOjvhK8_mvH33iKEVBCYSSpPm76YlBiBoqoEOVVV4cadFlQem/exec';
+    });
+
+    // เพิ่มส่วนนี้เพื่อซ่อน URL บาร์บนมือถือ
+    window.addEventListener('load', function() {
+      window.scrollTo(0, 1);
     });
   </script>
 </body>
